@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "howard";
+    src: url("./font/Newton\ Howard\ Font.otf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(54, 46, 0));
+    padding: 13px;
+    box-shadow: 0 11px 11px rgb(54, 50, 0);
+}
+nav img {
+    width: 50px;
+}
+.LINKU {
+    display: flex;
+    gap: 17px;
+}
+body {
+    padding-top: 200px;
+    height: 100%;
+    background: linear-gradient(to bottom right, yellow, black);
+    background-attachment: fixed;
+}
+.LINKU a {
+     text-decoration: none;
+     color: yellow;
+}
+nav h3 {
+    font-size: 25px;
+    font-family: "howard";
+    color: yellow;
+}
+.LINKU a:hover {
+    color: rgba(247, 218, 0, 0.632);
+}
+.maincontainerkartu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
+    gap: 20px;
+}
+.kartu {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    border: 1.5px solid yellow;
+    border-radius: 25px;
+}
+.kartu img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: contain;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.kartu img:hover {
+    border: 1.5px solid gold;
+    transform: scale(1.1);
+    overflow: hidden;overflow: hidden;
+}
